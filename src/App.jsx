@@ -78,7 +78,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Bird Memory Game</h1>
+      <h1>Memory Game</h1>
       <p>Flip the cards to find all the matching birds in the fewest number of turns.</p>
       <p>Turns: <strong>{turns}</strong></p>
       <div className="card-grid">
