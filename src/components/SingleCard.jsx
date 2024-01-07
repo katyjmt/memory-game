@@ -12,7 +12,7 @@ export default function SingleCard({ card, handleChoice, flipped, disabled }) {
     <div className="card">
       <div className={flipped ? "flipped" : ""}>
         <img className="front" src={card.src} alt="card front" />
-        <img className="back" src="/img/card-back2.png" onClick={handleClick} alt="card back" />
+        <img className="back" src="/img/card-back.png" onClick={handleClick} alt="card back" />
       </div>
     </div>
   )
