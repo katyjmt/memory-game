@@ -3,12 +3,12 @@ import "./App.css";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-  { src: "/img/helmet-1.png", matched: false },
-  { src: "/img/potion-1.png", matched: false },
-  { src: "/img/ring-1.png", matched: false },
-  { src: "/img/scroll-1.png", matched: false },
-  { src: "/img/shield-1.png", matched: false },
-  { src: "/img/sword-1.png", matched: false },
+  { src: "/img/bird-01.png", matched: false },
+  { src: "/img/bird-02.png", matched: false },
+  { src: "/img/bird-03.png", matched: false },
+  { src: "/img/bird-04.png", matched: false },
+  { src: "/img/bird-05.png", matched: false },
+  { src: "/img/bird-06.png", matched: false },
 ];
 
 function App() {
@@ -78,8 +78,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Magic Match</h1>
-      <button onClick={shuffleCards}>New Game</button>
+      <h1>Bird Memory</h1>
+      <p>Flip the cards to find all the matching birds in the fewest number of turns.</p>
+      <p>Turns: <strong>{turns}</strong></p>
       <div className="card-grid">
         {cards.map((card) => (
           <SingleCard 
@@ -91,7 +92,7 @@ function App() {
           />
         ))}
       </div>
-      <p>Turns: {turns}</p>
+      <button onClick={shuffleCards}>New Game</button>
     </div>
   );
 }
